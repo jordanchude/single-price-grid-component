@@ -1,0 +1,154 @@
+/*global styles*/
+
+body {
+    font-family: Karla;
+    position: relative;
+    background: #e6eff6;
+}
+
+/*global styles*/
+
+/* text styles */
+h1 {
+    color: #2bb3b1;
+    font-size: 30px;
+}
+
+#subtitle {
+    color: #bfdf32;
+    font-size: 20px;
+}
+
+#top-paragraph {
+    color: #acb1b7;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+#list {
+    line-height: 1.5em;
+    font-weight: 400;
+    color: hsl(204, 43%, 93%);
+}
+
+#price {
+    font-size: 2.5em;
+    margin-right: 10px;
+}
+
+#per-month {
+    color: hsl(204, 43%, 93%);
+}
+
+#price-per-month {
+    display: flex;
+    align-items: center;
+}
+
+#full-access {
+    text-align: center;
+    font-size: 19px;
+}
+
+/*text edits*/
+
+/*button*/
+button {
+    font-family: Karla;
+    margin-top: 7%;
+    background-color: #bfdf32;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 50px 15px 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/*container styles*/
+
+.container {
+    width: 45%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(1fr, 2);
+    grid-template-rows: repeat(1fr, 2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#top-box {
+    grid-row-start: start;
+    grid-row-end: 1;
+    grid-column-start: start;
+    grid-column-end: end;
+    background: #ffffff;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#bottom-row {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: start;
+    grid-column-end: end;
+    display: flex;
+    justify-content: space-between;
+    color: #f7ffff;
+}
+
+#bottom-left-box {
+    width: 50%;
+    background: #2bb3b1;
+    border-radius: 0px 0px 0px 15px;
+}
+
+#bottom-right-box {
+    width: 50%;
+    background: #4abebd;
+    border-radius: 0px 0px 15px 0px;
+}
+
+#top-box, #bottom-right-box, #bottom-left-box {
+    padding: 35px;
+}
+
+/* container styles */
+
+/* media query */
+
+@media (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #bottom-row {
+        flex-direction: column;
+        box-sizing: content-box;
+        width: 200%;
+    }
+    #top-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottom-right-box {
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    #bottom-left-box {
+        border-radius: 0px;
+    }
+
+    #top-box, #bottom-right-box, #bottom-left-box {
+        box-sizing: border-box;
+        padding: 20px;
+    }
+}
