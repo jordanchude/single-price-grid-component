@@ -126,14 +126,10 @@ button:hover {
 
 @media (max-width: 375px) {
     .container {
-        display: flex;
-        flex-direction: column;
+        width: 90%;
         transform: translate(0%, 0%);  
         top: 3%;
-        left: 0;
-        right: 0;
-        overflow: auto;
-        
+        left: 50%;
     }
     #bottom-row {
         flex-direction: column;
