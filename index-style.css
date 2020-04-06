@@ -132,8 +132,7 @@ button:hover {
         top: 3%;
         left: 0;
         right: 0;
-        font-size: .5em;
-        overflow-wrap: break-word;
+        overflow: auto;
         
     }
     #bottom-row {
