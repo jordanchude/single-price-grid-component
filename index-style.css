@@ -125,10 +125,6 @@ button:hover {
 /* media query */
 
 @media (max-width: 375px) {
-    body {
-        font-size: .5em
-    }
-    
     .container {
         display: flex;
         flex-direction: column;
@@ -136,6 +132,8 @@ button:hover {
         top: 3%;
         left: 0;
         right: 0;
+        font-size: .5em;
+        overflow-wrap: break-word;
         
     }
     #bottom-row {
